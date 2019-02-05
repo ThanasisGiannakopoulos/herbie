@@ -34,6 +34,7 @@ before_install:
   - cat ../travis-racket/install-racket.sh | bash
   - export PATH="${RACKET_DIR}/bin:${PATH}"
   - raco pkg install softposit-rkt
+  - raco pkg install fpbench
 install:
   - raco pkg install --auto $TRAVIS_BUILD_DIR/src
 script:
